@@ -7,7 +7,8 @@ setting_node(){
 
     sudo apt update -y
     sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
-
+    sleep 5
+    sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
 
     git clone https://github.com/xmrig/xmrig.git
     cd xmrig
@@ -19,6 +20,10 @@ setting_node(){
 
     cmake ..
     make
+
+    sleep 5
+
+    sudo apt update -y
 
     sudo apt upgrade -y
 
@@ -60,3 +65,23 @@ read -p " Wich part to apply ?
 1: Setting node 
 2: Starting node
 3: Setting the 'launch at reboot' " rep
+
+case $rep in
+
+    1)
+
+        setting_node
+        ;;
+    2)
+
+        starting_node
+        ;;
+    3)
+        echo "Warning - Work In Progress"
+        set_auto_launch_at_boot
+        ;;
+esac
+
+
+
+echo " Have a good One "
