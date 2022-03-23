@@ -30,6 +30,12 @@ setting_node(){
 
     sudo apt upgrade -y
 
+    cd ..
+    cd ..
+
+    mv /xmrig /
+    mv /monero-mining/monerov2.sh /
+
 }
 
 
