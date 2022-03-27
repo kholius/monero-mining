@@ -33,8 +33,8 @@ setting_node(){
     cd ..
     cd ..
 
-    mv /xmrig /
-    mv /monero-mining/monerov2.sh /
+    mv /xmrig/ /root/
+    mv /monero-mining/monerov2.sh /root/
 
 }
 
@@ -58,6 +58,7 @@ starting_node(){
         wallet="48VkHpipcwX2GQoRF1aGQ5FqwUD3sHgGFWC96D5wQPL99YfndBV9s2F66GcNsrAPgiGamukjtc3QMD59ZxXhCLMjN359VR7"
     fi
 
+    # ./xmrig -o xmrpool.eu:5555 -u 48VkHpipcwX2GQoRF1aGQ5FqwUD3sHgGFWC96D5wQPL99YfndBV9s2F66GcNsrAPgiGamukjtc3QMD59ZxXhCLMjN359VR7 -p node01
     ./xmrig -o $pool -u $wallet -p $namenode
 
 }
