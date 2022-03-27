@@ -42,7 +42,7 @@ setting_node(){
 
 starting_node(){
 
-    cd /xmrig/build/
+    cd xmrig/build/
     # ./xmrig -o xmrpool.eu:5555 -u 48VkHpipcwX2GQoRF1aGQ5FqwUD3sHgGFWC96D5wQPL99YfndBV9s2F66GcNsrAPgiGamukjtc3QMD59ZxXhCLMjN359VR7 -p node01
     read -p " What's the name of your node? :  " namenode
 
